@@ -8,6 +8,10 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -307,6 +311,17 @@ h1 {
   background-color: #BCEC30;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media (max-width: 1224px) {
+  .content {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .main {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

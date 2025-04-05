@@ -323,3 +323,18 @@ h1 {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+@media (max-width: 1224px ) {
+  .content {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .main {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 376px) {
+
+}
