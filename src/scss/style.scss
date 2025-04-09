@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -23,75 +27,75 @@ a {
   padding-bottom: 156px;
 }
 
-.star_1 {
+.star-1 {
   position: absolute;
   top: 94px;
   left: 63px;
 }
 
-.star_2 {
+.star-2 {
   position: absolute;
   top: 69px;
   left: 156px;
 }
 
-.star_3 {
+.star-3 {
   position: absolute;
   bottom: 135px;
   right: 455px;
 
 }
 
-.star_4 {
+.star-4 {
   position: absolute;
   bottom: 59px;
   right: 344px;
 
 }
 
-.star_5 {
+.star-5 {
   position: absolute;
   right: 1px;
  }
 
-.star_7 {
+.star-7 {
   position: absolute;
   top: 84px;
   right: 1px;
   overflow: hidden;
 }
 
-.star_8 {
+.star-8 {
   position: absolute;
   top: 770px;
   left: 25px;
 }
 
-.star_9 {
+.star-9 {
   position: absolute;
   top: 826px;
   left: 40px;
 }
 
-.star_10 {
+.star-10 {
   position: absolute;
   top: 93px;
   right: 123px;
 }
 
-.star_11 {
+.star-11 {
   position: absolute;
   top: 126px;
   right: 44px;
 }
 
-.star_12 {
+.star-12 {
   position: absolute;
   bottom: 65px;
   right: 52px;
 }
 
-.star_13 {
+.star-13 {
   position: absolute;
   bottom: 45px;
   right: 150px;
@@ -113,10 +117,17 @@ h1 {
   color: #202027;
   max-width: 746px;
   margin-bottom: 48px;
-
-  & span {
+  & span  {
     font-weight: 600;
   }
+  & span  a:link {
+    color: #202027;
+  }
+  & span  a:visited {
+    color: #202027;
+  }
+
+
 }
 
 .btn {
