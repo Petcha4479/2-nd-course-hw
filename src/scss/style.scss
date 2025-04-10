@@ -100,7 +100,9 @@ html {
   bottom: 45px;
   right: 150px;
 }
-
+.star-14 {
+  display: none;
+}
 h1 {
   font-weight: 700;
   font-size: 64px;
@@ -110,7 +112,7 @@ h1 {
   max-width: 770px;
 }
 
-.container__text {
+.container-content__text {
   font-weight: 400;
   font-size: 24px;
   line-height: 133%;
@@ -143,6 +145,7 @@ h1 {
   text-align: center;
   color: #fff;
   background-color: #202027;
+  display: block;
   &:hover {
     background-color: #ffffff;
     color: #202027;
@@ -289,7 +292,7 @@ h1 {
   padding-bottom: 144px;
   .game {
     grid-column: span 12;
-    max-width: 1200px;
+    //max-width: 1200px;
     display: flex;
     border-radius: 30px;
     background-color: #FFFFFF;
@@ -301,7 +304,7 @@ h1 {
       //padding-bottom: 203px;
       padding-right: 156px;
       border-radius: 30px;
-      //max-width: 600px;
+      max-width: 600px;
       &__title {
         font-weight: 700;
         font-size: 48px;
@@ -319,8 +322,9 @@ h1 {
     }
     &__img {
       max-width: 600px;
+      //height: auto;
       height: 500px;
-      border-radius: 46px;
+      border-radius: 30px;
     }
   }
 }
@@ -335,22 +339,190 @@ h1 {
   padding-bottom: 60px;
 }
 
-@media (max-width: 1224px ) {
+@media screen and (width <= 1224px) {
   .content {
     padding-left: 24px;
     padding-right: 24px;
   }
+
   .main {
+    padding-left: 24px;
+    padding-right: 24px;
+    .items {
+      justify-items: center;
+      .item {
+        grid-column: span 6;
+
+      }
+    }
+  }
+
+  .box {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
-@media (max-width: 376px) {
-  h1 {
-    font-weight: 700;
-    font-size: 40px;
-    text-align: center;
-    color: #202027;
+@media screen and (width <= 376px) {
+
+  .content {
+    padding-bottom: 131px;
   }
+
+  .star-5 {
+    display: none;
+  }
+
+  .star-1 {
+    left: 37px;
+    top: 97px;
+    & svg {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .star-2 {
+    top: 64px;
+    left: 91px;
+    & svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .star-3 {
+    bottom: 74px;
+    right: 86px;
+    & svg {
+      width: 21px;
+      height: 21px;
+    }
+  }
+
+  .star-4 {
+    bottom: 28px;
+    right: 34px;
+    & svg {
+      width: 39px;
+      height: 41px;
+    }
+  }
+
+  .star-14 {
+    display: block;
+    position: absolute;
+    right: 1px;
+  }
+
+  .container-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-weight: 700;
+      font-size: 40px;
+      text-align: center;
+      color: #202027;
+      width: 262px;
+      padding-top: 147px;
+    }
+    .container-content__text {
+      width: 296px;
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 36px;
+    }
+  }
+
+  .scroll-bar {
+    border: 0.54px solid rgba(255, 255, 255, 0.2);
+    padding: 16px 24px;
+    height: 51px;
+    gap: 24px;
+    &__link {
+      font-size: 16px;
+      line-height: 110%;
+      letter-spacing: 0.04em;
+    }
+    &__svg svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .main {
+    display: none;
+  }
+
+  .box {
+
+  }
+
+  .star-10 {
+    display: none;
+  }
+
+  .star-11 {
+    display: none;
+  }
+
+  .star-12 {
+    display: none;
+  }
+
+  .star-13 {
+    display: none;
+  }
+
+  .container {
+    h2 {
+      font-size: 40px;
+      padding-top: 48px;
+    }
+  }
+
+  .games {
+    margin-top: 48px;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 48px;
+    .game {
+      grid-column: span 4;
+      flex-direction: column;
+      width: 343px;
+      .game-box {
+        display: flex;
+        flex-direction: column;
+        padding: 29px 29px 32px 29px;
+
+        &__title {
+          font-size: 32px;
+        }
+        &__text {
+          font-size: 16px;
+          width: 249px;
+        }
+        .btn {
+          font-size: 16px;
+          line-height: 142%;
+          width: 285px;
+          height: 55px;
+          align-self: center;
+        }
+
+      }
+      &__img {
+        width: 343px;
+        height: 284px;
+        order: -1;
+      }
+    }
+  }
+
+  .footer__content {
+    font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
 }
