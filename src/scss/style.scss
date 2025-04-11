@@ -56,7 +56,7 @@ html {
 .star-5 {
   position: absolute;
   right: 1px;
- }
+}
 
 .star-7 {
   position: absolute;
@@ -100,9 +100,11 @@ html {
   bottom: 45px;
   right: 150px;
 }
+
 .star-14 {
   display: none;
 }
+
 h1 {
   font-weight: 700;
   font-size: 64px;
@@ -119,13 +121,16 @@ h1 {
   color: #202027;
   max-width: 746px;
   margin-bottom: 48px;
-  & span  {
+
+  & span {
     font-weight: 600;
   }
-  & span  a:link {
+
+  & span a:link {
     color: #202027;
   }
-  & span  a:visited {
+
+  & span a:visited {
     color: #202027;
   }
 
@@ -146,6 +151,7 @@ h1 {
   color: #fff;
   background-color: #202027;
   display: block;
+
   &:hover {
     background-color: #ffffff;
     color: #202027;
@@ -166,6 +172,7 @@ h1 {
   gap: 51px;
   overflow: hidden;
   background-color: #BCEC30;
+
   &__link {
     text-decoration: none;
     font-weight: 700;
@@ -181,6 +188,7 @@ h1 {
 .main {
   background-color: #202027;
   position: relative;
+
   h2 {
     font-weight: 700;
     font-size: 64px;
@@ -213,10 +221,12 @@ h1 {
     width: 378px;
     box-shadow: 0 13px 42px -8px rgba(0, 0, 0, 0.13);
     background: #fff;
+
     &:hover {
       transform: scale(1.07);
       cursor: pointer;
     }
+
     padding-bottom: 36px;
 
     .item__img1 {
@@ -225,6 +235,7 @@ h1 {
       border-radius: 30px;
       background-image: url("../../images/cover1.jpg");
     }
+
     .item__game {
       background-color: #F7F7F7;
       font-family: inherit;
@@ -241,6 +252,7 @@ h1 {
       //width: 108px;
       //height: 36px;
     }
+
     .item__title {
       font-weight: 700;
       font-size: 32px;
@@ -276,6 +288,7 @@ h1 {
 .box {
   background-color: #202027;
   position: relative;
+
   h2 {
     font-weight: 700;
     font-size: 64px;
@@ -290,12 +303,14 @@ h1 {
   gap: 32px;
   margin-top: 72px;
   padding-bottom: 144px;
+
   .game {
     grid-column: span 12;
     //max-width: 1200px;
     display: flex;
     border-radius: 30px;
     background-color: #FFFFFF;
+
     .game-box {
       background-color: #FFFFFF;
       //padding: 48px 156px 203px 48px;
@@ -305,11 +320,13 @@ h1 {
       padding-right: 156px;
       border-radius: 30px;
       max-width: 600px;
+
       &__title {
         font-weight: 700;
         font-size: 48px;
         color: #202027;
       }
+
       &__text {
         font-weight: 400;
         font-size: 24px;
@@ -320,6 +337,7 @@ h1 {
         margin-bottom: 36px;
       }
     }
+
     &__img {
       max-width: 600px;
       //height: auto;
@@ -348,8 +366,10 @@ h1 {
   .main {
     padding-left: 24px;
     padding-right: 24px;
+
     .items {
       justify-items: center;
+
       .item {
         grid-column: span 6;
 
@@ -376,6 +396,7 @@ h1 {
   .star-1 {
     left: 37px;
     top: 97px;
+
     & svg {
       width: 35px;
       height: 35px;
@@ -385,6 +406,7 @@ h1 {
   .star-2 {
     top: 64px;
     left: 91px;
+
     & svg {
       width: 18px;
       height: 18px;
@@ -394,6 +416,7 @@ h1 {
   .star-3 {
     bottom: 74px;
     right: 86px;
+
     & svg {
       width: 21px;
       height: 21px;
@@ -403,6 +426,7 @@ h1 {
   .star-4 {
     bottom: 28px;
     right: 34px;
+
     & svg {
       width: 39px;
       height: 41px;
@@ -419,6 +443,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     h1 {
       font-weight: 700;
       font-size: 40px;
@@ -427,6 +452,7 @@ h1 {
       width: 262px;
       padding-top: 147px;
     }
+
     .container-content__text {
       width: 296px;
       font-size: 16px;
@@ -440,11 +466,13 @@ h1 {
     padding: 16px 24px;
     height: 51px;
     gap: 24px;
+
     &__link {
       font-size: 16px;
       line-height: 110%;
       letter-spacing: 0.04em;
     }
+
     &__svg svg {
       width: 20px;
       height: 20px;
@@ -486,10 +514,12 @@ h1 {
     margin-top: 48px;
     grid-template-columns: repeat(4, 1fr);
     padding-bottom: 48px;
+
     .game {
       grid-column: span 4;
       flex-direction: column;
       width: 343px;
+
       .game-box {
         display: flex;
         flex-direction: column;
@@ -498,10 +528,12 @@ h1 {
         &__title {
           font-size: 32px;
         }
+
         &__text {
           font-size: 16px;
           width: 249px;
         }
+
         .btn {
           font-size: 16px;
           line-height: 142%;
@@ -511,6 +543,7 @@ h1 {
         }
 
       }
+
       &__img {
         width: 343px;
         height: 284px;

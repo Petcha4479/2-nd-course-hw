@@ -16,6 +16,12 @@ alert(`Сумма: ${numberOne + numberTwo}\nРазность: ${numberOne - num
 let result = 2 ** 5;
 alert(result);
 
+let one = 9;
+let two = 2;
+let remainder = one % two;
+alert(remainder);
+
+
 let num = 1;
 num += 5;
 num -= 3;
