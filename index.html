@@ -143,36 +143,47 @@
         <p class="container__text-about">Все игры доступны для пользования.</p>
         <div class="items">
             <article class="item item-one">
-                <a href="#guess-number"></a>
-                <div class="item__img1"></div>
-                <!--                <img class="item__img" src="images/cover1.jpg" alt="Игра 1">-->
-                <button class="item__game">Игра №1</button>
-                <div class="item__title">Угадай число</div>
+                <a href="#guessNumber">
+                    <div class="item__img1"></div>
+                    <!--                <img class="item__img" src="images/cover1.jpg" alt="Игра 1">-->
+                    <button class="item__game">Игра №1</button>
+                    <div class="item__title">Угадай число</div>
+                </a>
             </article>
             <article class="item item-two">
-                <img class="item__img" src="images/cover2.jpg" alt="Игра 1">
-                <div class="item__game">Игра №2</div>
-                <div class="item__title">Простая арифметика</div>
+                <a href="#simpleArithmetic">
+                    <img class="item__img" src="images/cover2.jpg" alt="Игра 1">
+                    <button class="item__game">Игра №2</button>
+                    <div class="item__title">Простая арифметика</div>
+                </a>
             </article>
             <article class="item item-one">
-                <img class="item__img" src="images/cover3.jpg" alt="Игра 1">
-                <div class="item__game">Игра №3</div>
-                <div class="item__title">Переверни текст</div>
+                <a href="#flipText">
+                    <img class="item__img" src="images/cover3.jpg" alt="Игра 1">
+                    <button class="item__game">Игра №3</button>
+                    <div class="item__title">Переверни текст</div>
+                </a>
             </article>
             <article class="item item-four">
-                <img class="item__img" src="images/cover4.jpg" alt="Игра 1">
-                <div class="item__game">Игра №4</div>
-                <div class="item__title">Камень, <br>ножницы, <br>бумага</div>
+                <a href="#quiz">
+                    <img class="item__img" src="images/cover4.jpg" alt="Игра 1">
+                    <button class="item__game">Игра №4</button>
+                    <div class="item__title">Камень, <br>ножницы, <br>бумага</div>
+                </a>
             </article>
             <article class="item item-five">
-                <img class="item__img" src="images/cover5.jpg" alt="Игра 1">
-                <div class="item__game">Игра №5</div>
-                <div class="item__title">Простая <br>викторина</div>
+                <a href="#rockPaper">
+                    <img class="item__img" src="images/cover5.jpg" alt="Игра 1">
+                    <button class="item__game">Игра №5</button>
+                    <div class="item__title">Простая <br>викторина</div>
+                </a>
             </article>
             <article class="item item-four">
-                <img class="item__img" src="images/cover6.jpg" alt="Игра 1">
-                <div class="item__game">Игра №6</div>
-                <div class="item__title">Генератор случайных <br>цветов</div>
+                <a href="#colorGenerator">
+                    <img class="item__img" src="images/cover6.jpg" alt="Игра 1">
+                    <button class="item__game">Игра №6</button>
+                    <div class="item__title">Генератор случайных <br>цветов</div>
+                </a>
             </article>
         </div>
     </div>
@@ -206,7 +217,7 @@
     <div class="container">
         <h2>Мини-игры</h2>
         <div id="guess-number" class="games">
-            <article class="game">
+            <article id="guessNumber" class="game">
                 <div class="game-box">
                     <h3 class="game-box__title">Угадай число</h3>
                     <p class="game-box__text">Попробуй угадать случайное число от 1 до 100.</p>
@@ -214,7 +225,7 @@
                 </div>
                 <img class="game__img" src="images/cover1.jpg" alt="Игра 1">
             </article>
-            <article class="game">
+            <article id="simpleArithmetic" class="game">
                 <img class="game__img" src="images/cover2.jpg" alt="Игра 2">
                 <div class="game-box">
                     <h3 class="game-box__title">Простая арифметика</h3>
@@ -222,7 +233,7 @@
                     <button class="btn">Играть!</button>
                 </div>
             </article>
-            <article class="game">
+            <article id="flipText" class="game">
                 <div class="game-box">
                     <h3 class="game-box__title">Переверни текст</h3>
                     <p class="game-box__text">Попробуй ввести текст, который будет перевернут.</p>
@@ -230,7 +241,7 @@
                 </div>
                 <img class="game__img" src="images/cover3.jpg" alt="Игра 3">
             </article>
-            <article class="game">
+            <article id="quiz" class="game">
                 <img class="game__img" src="images/cover4.jpg" alt="Игра 4">
                 <div class="game-box">
                     <h3 class="game-box__title">Викторина</h3>
@@ -238,7 +249,7 @@
                     <button class="btn">Играть!</button>
                 </div>
             </article>
-            <article class="game">
+            <article id="rockPaper" class="game">
                 <div class="game-box">
                     <h3 class="game-box__title">Камень, ножницы, бумага</h3>
                     <p class="game-box__text">Сыграй в популярную игру против компьютера.</p>
@@ -246,7 +257,7 @@
                 </div>
                 <img class="game__img" src="images/cover5.jpg" alt="Игра 5">
             </article>
-            <article class="game">
+            <article id="colorGenerator" class="game">
                 <img class="game__img" src="images/cover6.jpg" alt="Игра 6">
                 <div class="game-box">
                     <h3 class="game-box__title">Генератор случайных цветов</h3>
