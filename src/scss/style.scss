@@ -306,19 +306,16 @@ h1 {
 
   .game {
     grid-column: span 12;
-    //max-width: 1200px;
     display: flex;
-    border-radius: 30px;
+    border-radius: 47px;
     background-color: #FFFFFF;
 
     .game-box {
       background-color: #FFFFFF;
-      //padding: 48px 156px 203px 48px;
       padding-top: 48px;
       padding-left: 48px;
-      //padding-bottom: 203px;
       padding-right: 156px;
-      border-radius: 30px;
+      border-radius: 47px;
       max-width: 600px;
 
       &__title {
@@ -340,9 +337,8 @@ h1 {
 
     &__img {
       max-width: 600px;
-      //height: auto;
       height: 500px;
-      border-radius: 30px;
+      border-radius: 47px;
     }
   }
 }

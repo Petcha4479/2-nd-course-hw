@@ -287,7 +287,7 @@ h1 {
 .games .game {
   grid-column: span 12;
   display: flex;
-  border-radius: 30px;
+  border-radius: 47px;
   background-color: #FFFFFF;
 }
 .games .game .game-box {
@@ -295,7 +295,7 @@ h1 {
   padding-top: 48px;
   padding-left: 48px;
   padding-right: 156px;
-  border-radius: 30px;
+  border-radius: 47px;
   max-width: 600px;
 }
 .games .game .game-box__title {
@@ -315,7 +315,7 @@ h1 {
 .games .game__img {
   max-width: 600px;
   height: 500px;
-  border-radius: 30px;
+  border-radius: 47px;
 }
 
 .footer__content {
