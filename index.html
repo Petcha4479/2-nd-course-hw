@@ -48,12 +48,22 @@
             <path d="M492 663L526 787" stroke="#202027" stroke-linecap="round"/>
         </svg>
     </div>
+    <div class="star-14">
+        <svg width="160" height="155" viewBox="0 0 160 155" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M164.226 10.1084C167.072 10.8901 246.284 43.9262 246.284 43.9262L162.242 52.8254L215.335 120.072L140.485 74.1373L132.858 151.995L111.761 70.0034L41.4419 109.004L89.8822 51.7587L3.91711 47.8942L84.7193 23.992L24.6779 -44.2245L109.09 -5.05042L128.408 -80.6362L137.083 -4.88821L213.973 -57.1361L164.226 10.1084Z"
+                  fill="#BCEC30" stroke="#202027" stroke-miterlimit="10" stroke-linecap="round"/>
+        </svg>
+    </div>
     <div class="container">
-        <h1>Добро пожаловать на мой сайт мини-игр</h1>
-        <p class="container__text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span> <a href="#guess-number"  >«Поехали!»</a></span>
-            и <span>приступай.</span>
-        </p>
-        <a href="#guess-number" class="btn">Поехали!</a>
+        <div class="container-content">
+            <h1>Добро пожаловать на мой сайт мини-игр</h1>
+            <p class="container-content__text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай
+                <span> <a
+                        href="#guess-number">«Поехали!»</a></span>
+                и <span>приступай.</span>
+            </p>
+            <a href="#guess-number" class="btn">Поехали!</a>
+        </div>
     </div>
 
 </section>
@@ -133,36 +143,47 @@
         <p class="container__text-about">Все игры доступны для пользования.</p>
         <div class="items">
             <article class="item item-one">
-                <a href="#guess-number"></a>
-                <div class="item__img1"></div>
-                <!--                <img class="item__img" src="images/cover1.jpg" alt="Игра 1">-->
-                <button class="item__game">Игра №1</button>
-                <div class="item__title">Угадай число</div>
+                <a href="#guessNumber">
+                    <div class="item__img1"></div>
+                    <!--                <img class="item__img" src="images/cover1.jpg" alt="Игра 1">-->
+                    <button class="item__game">Игра №1</button>
+                    <div class="item__title">Угадай число</div>
+                </a>
             </article>
             <article class="item item-two">
-                <img class="item__img" src="images/cover2.jpg" alt="Игра 1">
-                <div class="item__game">Игра №2</div>
-                <div class="item__title">Простая арифметика</div>
+                <a href="#simpleArithmetic">
+                    <img class="item__img" src="images/cover2.jpg" alt="Игра 1">
+                    <button class="item__game">Игра №2</button>
+                    <div class="item__title">Простая арифметика</div>
+                </a>
             </article>
             <article class="item item-one">
-                <img class="item__img" src="images/cover3.jpg" alt="Игра 1">
-                <div class="item__game">Игра №3</div>
-                <div class="item__title">Переверни текст</div>
+                <a href="#flipText">
+                    <img class="item__img" src="images/cover3.jpg" alt="Игра 1">
+                    <button class="item__game">Игра №3</button>
+                    <div class="item__title">Переверни текст</div>
+                </a>
             </article>
             <article class="item item-four">
-                <img class="item__img" src="images/cover4.jpg" alt="Игра 1">
-                <div class="item__game">Игра №4</div>
-                <div class="item__title">Камень, <br>ножницы, <br>бумага</div>
+                <a href="#quiz">
+                    <img class="item__img" src="images/cover4.jpg" alt="Игра 1">
+                    <button class="item__game">Игра №4</button>
+                    <div class="item__title">Камень, <br>ножницы, <br>бумага</div>
+                </a>
             </article>
             <article class="item item-five">
-                <img class="item__img" src="images/cover5.jpg" alt="Игра 1">
-                <div class="item__game">Игра №5</div>
-                <div class="item__title">Простая <br>викторина</div>
+                <a href="#rockPaper">
+                    <img class="item__img" src="images/cover5.jpg" alt="Игра 1">
+                    <button class="item__game">Игра №5</button>
+                    <div class="item__title">Простая <br>викторина</div>
+                </a>
             </article>
             <article class="item item-four">
-                <img class="item__img" src="images/cover6.jpg" alt="Игра 1">
-                <div class="item__game">Игра №6</div>
-                <div class="item__title">Генератор случайных <br>цветов</div>
+                <a href="#colorGenerator">
+                    <img class="item__img" src="images/cover6.jpg" alt="Игра 1">
+                    <button class="item__game">Игра №6</button>
+                    <div class="item__title">Генератор случайных <br>цветов</div>
+                </a>
             </article>
         </div>
     </div>
@@ -196,15 +217,15 @@
     <div class="container">
         <h2>Мини-игры</h2>
         <div id="guess-number" class="games">
-            <article class="game" >
+            <article id="guessNumber" class="game">
                 <div class="game-box">
                     <h3 class="game-box__title">Угадай число</h3>
                     <p class="game-box__text">Попробуй угадать случайное число от 1 до 100.</p>
-                    <button class="btn">Играть!</button>
+                    <button onclick="firstGame()" class="btn">Играть!</button>
                 </div>
                 <img class="game__img" src="images/cover1.jpg" alt="Игра 1">
             </article>
-            <article class="game">
+            <article id="simpleArithmetic" class="game">
                 <img class="game__img" src="images/cover2.jpg" alt="Игра 2">
                 <div class="game-box">
                     <h3 class="game-box__title">Простая арифметика</h3>
@@ -212,7 +233,7 @@
                     <button class="btn">Играть!</button>
                 </div>
             </article>
-            <article class="game">
+            <article id="flipText" class="game">
                 <div class="game-box">
                     <h3 class="game-box__title">Переверни текст</h3>
                     <p class="game-box__text">Попробуй ввести текст, который будет перевернут.</p>
@@ -220,7 +241,7 @@
                 </div>
                 <img class="game__img" src="images/cover3.jpg" alt="Игра 3">
             </article>
-            <article class="game">
+            <article id="quiz" class="game">
                 <img class="game__img" src="images/cover4.jpg" alt="Игра 4">
                 <div class="game-box">
                     <h3 class="game-box__title">Викторина</h3>
@@ -228,7 +249,7 @@
                     <button class="btn">Играть!</button>
                 </div>
             </article>
-            <article class="game">
+            <article id="rockPaper" class="game">
                 <div class="game-box">
                     <h3 class="game-box__title">Камень, ножницы, бумага</h3>
                     <p class="game-box__text">Сыграй в популярную игру против компьютера.</p>
@@ -236,7 +257,7 @@
                 </div>
                 <img class="game__img" src="images/cover5.jpg" alt="Игра 5">
             </article>
-            <article class="game">
+            <article id="colorGenerator" class="game">
                 <img class="game__img" src="images/cover6.jpg" alt="Игра 6">
                 <div class="game-box">
                     <h3 class="game-box__title">Генератор случайных цветов</h3>
@@ -252,5 +273,9 @@
 <footer class="footer">
     <div class="footer__content">Все права защищены.</div>
 </footer>
+<!--<script src="./src/scripts/hw-2.js"></script>-->
+<!--<script src="./src/scripts/hw-3.js"></script>-->
+<!--<script src="./src/scripts/hw-4.js"></script>-->
+<script src="./src/scripts/hw-5.js"></script>
 </body>
 </html>

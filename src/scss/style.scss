@@ -56,7 +56,7 @@ html {
 .star-5 {
   position: absolute;
   right: 1px;
- }
+}
 
 .star-7 {
   position: absolute;
@@ -101,6 +101,10 @@ html {
   right: 150px;
 }
 
+.star-14 {
+  display: none;
+}
+
 h1 {
   font-weight: 700;
   font-size: 64px;
@@ -110,7 +114,7 @@ h1 {
   max-width: 770px;
 }
 
-.container__text {
+.container-content__text {
   font-weight: 400;
   font-size: 24px;
   line-height: 133%;
@@ -120,10 +124,12 @@ h1 {
   & span  {
     font-weight: 600;
   }
-  & span  a:link {
+
+  & span a:link {
     color: #202027;
   }
-  & span  a:visited {
+
+  & span a:visited {
     color: #202027;
   }
 
@@ -143,6 +149,8 @@ h1 {
   text-align: center;
   color: #fff;
   background-color: #202027;
+  display: block;
+
   &:hover {
     background-color: #ffffff;
     color: #202027;
@@ -163,6 +171,7 @@ h1 {
   gap: 51px;
   overflow: hidden;
   background-color: #BCEC30;
+
   &__link {
     text-decoration: none;
     font-weight: 700;
@@ -178,6 +187,7 @@ h1 {
 .main {
   background-color: #202027;
   position: relative;
+
   h2 {
     font-weight: 700;
     font-size: 64px;
@@ -210,10 +220,12 @@ h1 {
     width: 378px;
     box-shadow: 0 13px 42px -8px rgba(0, 0, 0, 0.13);
     background: #fff;
+
     &:hover {
       transform: scale(1.07);
       cursor: pointer;
     }
+
     padding-bottom: 36px;
 
     .item__img1 {
@@ -222,6 +234,7 @@ h1 {
       border-radius: 30px;
       background-image: url("../../images/cover1.jpg");
     }
+
     .item__game {
       background-color: #F7F7F7;
       font-family: inherit;
@@ -238,6 +251,7 @@ h1 {
       //width: 108px;
       //height: 36px;
     }
+
     .item__title {
       font-weight: 700;
       font-size: 32px;
@@ -273,6 +287,7 @@ h1 {
 .box {
   background-color: #202027;
   position: relative;
+
   h2 {
     font-weight: 700;
     font-size: 64px;
@@ -287,26 +302,27 @@ h1 {
   gap: 32px;
   margin-top: 72px;
   padding-bottom: 144px;
+
   .game {
     grid-column: span 12;
-    max-width: 1200px;
     display: flex;
-    border-radius: 30px;
+    border-radius: 47px;
     background-color: #FFFFFF;
+
     .game-box {
       background-color: #FFFFFF;
-      //padding: 48px 156px 203px 48px;
       padding-top: 48px;
       padding-left: 48px;
-      //padding-bottom: 203px;
       padding-right: 156px;
-      border-radius: 30px;
-      //max-width: 600px;
+      border-radius: 47px;
+      max-width: 600px;
+
       &__title {
         font-weight: 700;
         font-size: 48px;
         color: #202027;
       }
+
       &__text {
         font-weight: 400;
         font-size: 24px;
@@ -317,10 +333,11 @@ h1 {
         margin-bottom: 36px;
       }
     }
+
     &__img {
       max-width: 600px;
       height: 500px;
-      border-radius: 46px;
+      border-radius: 47px;
     }
   }
 }
@@ -333,4 +350,207 @@ h1 {
   background-color: #BCEC30;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (width <= 1224px) {
+  .content {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .main {
+    padding-left: 24px;
+    padding-right: 24px;
+
+    .items {
+      justify-items: center;
+
+      .item {
+        grid-column: span 6;
+
+      }
+    }
+  }
+
+  .box {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (width <= 376px) {
+
+  .content {
+    padding-bottom: 131px;
+  }
+
+  .star-5 {
+    display: none;
+  }
+
+  .star-1 {
+    left: 37px;
+    top: 97px;
+
+    & svg {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .star-2 {
+    top: 64px;
+    left: 91px;
+
+    & svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .star-3 {
+    bottom: 74px;
+    right: 86px;
+
+    & svg {
+      width: 21px;
+      height: 21px;
+    }
+  }
+
+  .star-4 {
+    bottom: 28px;
+    right: 34px;
+
+    & svg {
+      width: 39px;
+      height: 41px;
+    }
+  }
+
+  .star-14 {
+    display: block;
+    position: absolute;
+    right: 1px;
+  }
+
+  .container-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-weight: 700;
+      font-size: 40px;
+      text-align: center;
+      color: #202027;
+      width: 262px;
+      padding-top: 147px;
+    }
+
+    .container-content__text {
+      width: 296px;
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 36px;
+    }
+  }
+
+  .scroll-bar {
+    border: 0.54px solid rgba(255, 255, 255, 0.2);
+    padding: 16px 24px;
+    height: 51px;
+    gap: 24px;
+
+    &__link {
+      font-size: 16px;
+      line-height: 110%;
+      letter-spacing: 0.04em;
+    }
+
+    &__svg svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .main {
+    display: none;
+  }
+
+  .box {
+
+  }
+
+  .star-10 {
+    display: none;
+  }
+
+  .star-11 {
+    display: none;
+  }
+
+  .star-12 {
+    display: none;
+  }
+
+  .star-13 {
+    display: none;
+  }
+
+  .container {
+    h2 {
+      font-size: 40px;
+      padding-top: 48px;
+    }
+  }
+
+  .games {
+    margin-top: 48px;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 48px;
+
+    .game {
+      grid-column: span 4;
+      flex-direction: column;
+      width: 343px;
+
+      .game-box {
+        display: flex;
+        flex-direction: column;
+        padding: 29px 29px 32px 29px;
+
+        &__title {
+          font-size: 32px;
+        }
+
+        &__text {
+          font-size: 16px;
+          width: 249px;
+        }
+
+        .btn {
+          font-size: 16px;
+          line-height: 142%;
+          width: 285px;
+          height: 55px;
+          align-self: center;
+        }
+
+      }
+
+      &__img {
+        width: 343px;
+        height: 284px;
+        order: -1;
+      }
+    }
+  }
+
+  .footer__content {
+    font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
 }
