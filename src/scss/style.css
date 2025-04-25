@@ -151,7 +151,12 @@ h1 {
   cursor: pointer;
 }
 
-.scroll-bar {
+.animation {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #BCEC30;
+}
+.animation .scroll-bar {
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 27px;
   padding-bottom: 27px;
@@ -162,10 +167,10 @@ h1 {
   position: relative;
   z-index: 1;
   gap: 51px;
-  overflow: hidden;
   background-color: #BCEC30;
+  animation: scrollLeft 30s linear infinite;
 }
-.scroll-bar__link {
+.animation .scroll-bar__link {
   text-decoration: none;
   font-weight: 700;
   font-size: 30px;
@@ -174,6 +179,14 @@ h1 {
   text-transform: uppercase;
   color: #202027;
   white-space: nowrap;
+}
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .main {
