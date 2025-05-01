@@ -121,7 +121,8 @@ h1 {
   color: #202027;
   max-width: 746px;
   margin-bottom: 48px;
-  & span  {
+
+  & span {
     font-weight: 600;
   }
 
@@ -158,29 +159,42 @@ h1 {
   }
 }
 
-.scroll-bar {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding-top: 27px;
-  padding-bottom: 27px;
-  padding-left: 20px;
-  height: 90px;
-  width: 100%;
-  display: flex;
-  position: relative;
-  z-index: 1;
-  gap: 51px;
+.animation {
   overflow: hidden;
+  white-space: nowrap;
   background-color: #BCEC30;
+  .scroll-bar {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 20px;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    gap: 51px;
+    background-color: #BCEC30;
+    animation: scrollLeft 30s linear infinite;
 
-  &__link {
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 110%;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #202027;
-    white-space: nowrap;
+    &__link {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 110%;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #202027;
+      white-space: nowrap;
+    }
+  }
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
 }
 

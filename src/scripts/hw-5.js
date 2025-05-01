@@ -1,52 +1,52 @@
 // Игра угадай число
-function firstGame () {
-    function guessNumberGame() {
-        // Генерируем случайное число от 1 до 100
-        const secretNumber = Math.floor(Math.random() * 100) + 1;
-        let attempts = 0;
-        let userGuess;
-
-        alert('Я загадал число от 1 до 100. Попробуй угадать!');
-
-        do {
-            // Запрашиваем у пользователя число
-            userGuess = prompt('Введите вашу догадку (число от 1 до 100):');
-
-            // Проверяем, хочет ли пользователь выйти (нажал Cancel)
-            if (userGuess === null) {
-                alert(`Игра окончена. Загаданное число было: ${secretNumber}`);
-                return;
-            }
-
-            // Преобразуем в число и проверяем валидность
-            userGuess = Number(userGuess);
-
-            if (isNaN(userGuess)) {
-                alert('Пожалуйста, введите число!');
-                continue;
-            }
-
-            if (userGuess < 1 || userGuess > 100) {
-                alert('Число должно быть от 1 до 100!');
-                continue;
-            }
-
-            attempts++;
-
-            // Даем подсказки
-            if (userGuess < secretNumber) {
-                alert('Загаданное число больше!');
-            } else if (userGuess > secretNumber) {
-                alert('Загаданное число меньше!');
-            }
-
-        } while (userGuess !== secretNumber);
-
-        // Поздравляем с победой
-        alert(`Поздравляю! Вы угадали число ${secretNumber} за ${attempts} попыток!`);
-    }
-    guessNumberGame();
-}
+// function firstGame () {
+//     function guessNumberGame() {
+//         // Генерируем случайное число от 1 до 100
+//         const secretNumber = Math.floor(Math.random() * 100) + 1;
+//         let attempts = 0;
+//         let userGuess;
+//
+//         alert('Я загадал число от 1 до 100. Попробуй угадать!');
+//
+//         do {
+//             // Запрашиваем у пользователя число
+//             userGuess = prompt('Введите вашу догадку (число от 1 до 100):');
+//
+//             // Проверяем, хочет ли пользователь выйти (нажал Cancel)
+//             if (userGuess === null) {
+//                 alert(`Игра окончена. Загаданное число было: ${secretNumber}`);
+//                 return;
+//             }
+//
+//             // Преобразуем в число и проверяем валидность
+//             userGuess = Number(userGuess);
+//
+//             if (isNaN(userGuess)) {
+//                 alert('Пожалуйста, введите число!');
+//                 continue;
+//             }
+//
+//             if (userGuess < 1 || userGuess > 100) {
+//                 alert('Число должно быть от 1 до 100!');
+//                 continue;
+//             }
+//
+//             attempts++;
+//
+//             // Даем подсказки
+//             if (userGuess < secretNumber) {
+//                 alert('Загаданное число больше!');
+//             } else if (userGuess > secretNumber) {
+//                 alert('Загаданное число меньше!');
+//             }
+//
+//         } while (userGuess !== secretNumber);
+//
+//         // Поздравляем с победой
+//         alert(`Поздравляю! Вы угадали число ${secretNumber} за ${attempts} попыток!`);
+//     }
+//     guessNumberGame();
+// }
 
 // Задание 1
 function min (a, b) {
