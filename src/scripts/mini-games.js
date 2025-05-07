@@ -1,5 +1,5 @@
 // Игра угадай число
-function firstGame () {
+function firstGame() {
     function guessNumberGame() {
         // Генерируем случайное число от 1 до 100
         const secretNumber = Math.floor(Math.random() * 100) + 1;
@@ -49,7 +49,7 @@ function firstGame () {
 }
 
 // Игра Простая арифметика
-function secondGame () {
+function secondGame() {
     function generateMathProblem() {
         const operations = ['+', '-', '*', '/'];
         const operation = operations[Math.floor(Math.random() * operations.length)];
@@ -101,4 +101,66 @@ function secondGame () {
 
 // поехали!!!
     startMathQuiz();
+}
+
+// Игра «Переверни текст»
+function thirdGame() {
+    const userGuess = prompt('Введите текст для переворачивания');
+    const turnText = userGuess.split('').reverse().join('');
+    alert(`Перевернутый текс: ${turnText}`);
+}
+
+// Игра «Викторина»
+function fourthGame() {
+    const jobArray
+        = [
+        {
+            question: "Какой цвет небо?",
+            options: ["1. Красный", "2. Синий", "3. Зеленый"],
+            correctAnswer: 2 // номер правильного ответа
+        },
+        {
+            question: "Сколько дней в неделе?",
+            options: ["1. Шесть", "2. Семь", "3. Восемь"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько у человека пальцев на одной руке?",
+            options: ["1. Четыре", "2. Пять", "3. Шесть"],
+            correctAnswer: 2
+        }
+    ];
+
+    let correctAnswers = 0;
+
+    for (let i = 0; i < jobArray.length; i++) {
+        const currentQuestion = jobArray[i];
+
+        // Формируем текст вопроса с вариантами ответов
+        let questionText = currentQuestion.question + "\n";
+        questionText += currentQuestion.options.join("\n");
+
+        // Запрашиваем ответ у пользователя
+        const userAnswer = parseInt(prompt(questionText));
+
+        // Проверяем ответ
+        if (userAnswer === currentQuestion.correctAnswer) {
+            correctAnswers++;
+        }
+    }
+
+// Выводим результат
+    alert(`Правильных ответов: ${correctAnswers} из ${jobArray.length}`);
+}
+
+
+//Игра 5
+function fifthGame() {
+    alert("%")
+}
+
+
+//Игра 6
+function sixthGame() {
+    alert("Богн")
 }

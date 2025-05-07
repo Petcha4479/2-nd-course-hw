@@ -112,3 +112,6 @@ const average = array15.reduce((sum, num) => sum + num, 0) / array15.length;
 // Выводим массив и среднее арифметическое
 console.log("Сгенерированный массив:", array15);
 console.log("Среднее арифметическое:", average);
+
+let currentDate = new Date();
+console.log(currentDate);
