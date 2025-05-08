@@ -162,5 +162,5 @@ function fifthGame() {
 
 //Игра 6
 function sixthGame() {
-    alert("Богн")
+    alert("Бгг")
 }
