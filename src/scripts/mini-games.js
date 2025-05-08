@@ -45,6 +45,7 @@ function firstGame() {
         // Поздравляем с победой
         alert(`Поздравляю! Вы угадали число ${secretNumber} за ${attempts} попыток!`);
     }
+
     guessNumberGame();
 }
 
@@ -155,8 +156,37 @@ function fourthGame() {
 
 
 //Игра 5
-function fifthGame() {
-    alert("%")
+function fiveGame() {
+
+    const options = ["камень", "ножницы", "бумага"];
+
+    // Запрос выбора пользователя
+    const userChoice = prompt("Выберите: камень, ножницы или бумага?").toLowerCase();
+
+    // Проверка валидности выбора
+    if (!options.includes(userChoice)) {
+        alert("Пожалуйста, выберите камень, ножницы или бумагу!");
+        return;
+    }
+
+    // Случайный выбор компьютера
+    const computerChoice = options[Math.floor(Math.random() * options.length)];
+
+    // Определение победителя
+    let result;
+
+    if (userChoice === computerChoice) {
+        result = "Ничья!";
+    } else if (
+        (userChoice === "камень" && computerChoice === "ножницы") ||
+        (userChoice === "ножницы" && computerChoice === "бумага") ||
+        (userChoice === "бумага" && computerChoice === "камень")
+    ) {
+        result = "Вы победили!";
+    } else {
+        result = "Компьютер победил!";
+    }
+    alert(result);
 }
 
 
