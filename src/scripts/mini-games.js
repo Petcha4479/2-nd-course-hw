@@ -191,6 +191,21 @@ function fiveGame() {
 
 
 //Игра 6
-function sixthGame() {
-    alert("Бгг")
+
+const element = document.getElementsByClassName('btn');
+console.log(element);
+console.log(element[6]);
+const button = element[6];
+button.addEventListener('click', function () {
+    const element1 = document.querySelector('.box');
+    element1.style.backgroundColor = getRandomColor();
+});
+
+function getRandomColor() {
+    let letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
 }
